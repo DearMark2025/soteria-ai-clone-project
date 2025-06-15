@@ -1,4 +1,5 @@
 
+
 import { ArrowRight, Code } from 'lucide-react';
 
 const Hero = () => {
@@ -7,49 +8,49 @@ const Hero = () => {
       {/* Animated Node Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Node 1 */}
-        <div className="absolute top-20 left-20 w-3 h-3 bg-green-500 rounded-full opacity-60">
+        <div className="absolute top-20 left-20 w-6 h-6 bg-green-500 rounded-full opacity-60">
           <div className="w-full h-full bg-green-500 rounded-full animate-ping"></div>
         </div>
         
         {/* Node 2 */}
-        <div className="absolute top-40 right-32 w-2 h-2 bg-green-400 rounded-full opacity-50">
+        <div className="absolute top-40 right-32 w-4 h-4 bg-green-400 rounded-full opacity-50">
           <div className="w-full h-full bg-green-400 rounded-full animate-pulse"></div>
         </div>
         
         {/* Node 3 */}
-        <div className="absolute bottom-40 left-32 w-4 h-4 bg-green-600 rounded-full opacity-40">
+        <div className="absolute bottom-40 left-32 w-8 h-8 bg-green-600 rounded-full opacity-40">
           <div className="w-full h-full bg-green-600 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
         </div>
         
         {/* Node 4 */}
-        <div className="absolute top-60 left-1/2 w-2.5 h-2.5 bg-green-300 rounded-full opacity-70">
+        <div className="absolute top-60 left-1/2 w-5 h-5 bg-green-300 rounded-full opacity-70">
           <div className="w-full h-full bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
         </div>
         
         {/* Node 5 */}
-        <div className="absolute bottom-60 right-20 w-3.5 h-3.5 bg-green-500 rounded-full opacity-50">
+        <div className="absolute bottom-60 right-20 w-7 h-7 bg-green-500 rounded-full opacity-50">
           <div className="w-full h-full bg-green-500 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
         </div>
         
         {/* Node 6 */}
-        <div className="absolute top-32 left-2/3 w-2 h-2 bg-green-400 rounded-full opacity-60">
+        <div className="absolute top-32 left-2/3 w-4 h-4 bg-green-400 rounded-full opacity-60">
           <div className="w-full h-full bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
         </div>
         
         {/* Node 7 */}
-        <div className="absolute bottom-20 left-1/4 w-3 h-3 bg-green-600 rounded-full opacity-45">
+        <div className="absolute bottom-20 left-1/4 w-6 h-6 bg-green-600 rounded-full opacity-45">
           <div className="w-full h-full bg-green-600 rounded-full animate-ping" style={{ animationDelay: '3s' }}></div>
         </div>
         
         {/* Node 8 */}
-        <div className="absolute top-1/2 right-40 w-2.5 h-2.5 bg-green-300 rounded-full opacity-55">
+        <div className="absolute top-1/2 right-40 w-5 h-5 bg-green-300 rounded-full opacity-55">
           <div className="w-full h-full bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '2.5s' }}></div>
         </div>
         
         {/* Floating particles */}
-        <div className="absolute top-80 left-40 w-1 h-1 bg-green-400 rounded-full opacity-30 animate-bounce" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-80 right-60 w-1 h-1 bg-green-500 rounded-full opacity-40 animate-bounce" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-96 right-1/4 w-1 h-1 bg-green-300 rounded-full opacity-35 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-80 left-40 w-2 h-2 bg-green-400 rounded-full opacity-30 animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-80 right-60 w-2 h-2 bg-green-500 rounded-full opacity-40 animate-bounce" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-96 right-1/4 w-2 h-2 bg-green-300 rounded-full opacity-35 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -118,3 +119,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
