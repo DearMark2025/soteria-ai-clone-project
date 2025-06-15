@@ -32,12 +32,22 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-green-400 hover:text-green-300 transition-colors px-4 py-2">
+            <a 
+              href="https://wa.me/2348035567300"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:text-green-300 transition-colors px-4 py-2"
+            >
               Support
-            </button>
-            <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full transition-colors">
-              Sign In
-            </button>
+            </a>
+            <a 
+              href="https://wa.me/2348035567300"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full transition-colors"
+            >
+              Contact Us
+            </a>
           </div>
 
           <div className="md:hidden">
@@ -58,12 +68,22 @@ const Header = () => {
               <a href="#about" className="block px-3 py-2 text-gray-300 hover:text-green-400">About</a>
               <a href="#contact" className="block px-3 py-2 text-gray-300 hover:text-green-400">Contact</a>
               <div className="flex flex-col space-y-2 px-3 pt-4">
-                <button className="text-green-400 hover:text-green-300 transition-colors px-4 py-2 text-left">
+                <a 
+                  href="https://wa.me/2348035567300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-400 hover:text-green-300 transition-colors px-4 py-2 text-left"
+                >
                   Support
-                </button>
-                <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full transition-colors">
-                  Sign In
-                </button>
+                </a>
+                <a 
+                  href="https://wa.me/2348035567300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full transition-colors"
+                >
+                  Contact Us
+                </a>
               </div>
             </div>
           </div>
