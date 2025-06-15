@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
@@ -90,10 +89,15 @@ const Hero = () => {
 
         {/* CTA Button */}
         <div className="mb-16">
-          <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 mx-auto shadow-lg hover:shadow-xl">
+          <a
+            href="https://wa.me/2348035567300"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 mx-auto shadow-lg hover:shadow-xl"
+          >
             Start Your Project
             <ArrowRight size={20} />
-          </button>
+          </a>
         </div>
 
         {/* Features */}

@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-400">
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>projects@soteria.com.ng</span>
+                <span>soteria@elevateai.pro</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
