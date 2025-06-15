@@ -1,4 +1,3 @@
-
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
@@ -67,11 +66,11 @@ const Footer = () => {
             <div className="space-y-3 text-gray-400">
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>projects@soteriaai.ng</span>
+                <span>projects@soteria.com.ng</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+234 800 SOTERIA</span>
+                <span>+2348035567300</span>
               </div>
               <div className="text-sm">
                 <p>Ibadan, Oyo State, Nigeria</p>
