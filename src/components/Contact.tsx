@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
 
@@ -11,6 +12,14 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`Project Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nProject Details:\n${formData.message}`);
+    const mailtoLink = `mailto:soteria@elevateai.pro?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
