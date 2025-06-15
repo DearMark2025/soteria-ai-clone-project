@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
@@ -58,17 +59,6 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Central Logo */}
-        <div className="mb-8 flex justify-center">
-          <div className="bg-white p-6 rounded-2xl shadow-2xl">
-            <img 
-              src="/lovable-uploads/b36e128d-738d-419d-b9bc-7738c221ebff.png" 
-              alt="Soteria AI Technologies Logo" 
-              className="w-16 h-16 object-contain"
-            />
-          </div>
-        </div>
-
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
           <span className="text-white">Soteria AI</span>{' '}
