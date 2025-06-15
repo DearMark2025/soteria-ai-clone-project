@@ -1,5 +1,3 @@
-
-
 import { ArrowRight, Code } from 'lucide-react';
 
 const Hero = () => {
@@ -63,8 +61,8 @@ const Hero = () => {
 
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-          <span className="text-white">Soteria</span>{' '}
-          <span className="text-green-400">AI</span>
+          <span className="text-white">Soteria AI</span>{' '}
+          <span className="text-green-400">Technologies</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -119,4 +117,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

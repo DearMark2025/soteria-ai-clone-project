@@ -17,7 +17,7 @@ const Header = () => {
                 </div>
               </div>
               <h1 className="text-xl font-bold text-white">
-                Soteria AI
+                Soteria AI Technologies
               </h1>
             </div>
           </div>
