@@ -1,6 +1,7 @@
 
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ const Contact = () => {
     email: '',
     message: ''
   });
+
+  const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,12 +23,18 @@ const Contact = () => {
     
     // Open email client
     window.location.href = mailtoLink;
-  };
+    
+    // Show success message
+    toast({
+      title: "Inquiry Submitted Successfully",
+      description: "Thank you for reaching out. We will respond to your inquiry within 2-4 hours via the email address you provided.",
+    });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    // Reset form
     setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
+      name: '',
+      email: '',
+      message: ''
     });
   };
 
