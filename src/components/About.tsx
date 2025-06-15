@@ -1,5 +1,4 @@
-
-import { Award, Users, Target, Globe, TrendingUp, BarChart3 } from 'lucide-react';
+import { Award, Users, Target, Globe, TrendingUp, BarChart3, Shield } from 'lucide-react';
 
 const About = () => {
   const impactStats = [
