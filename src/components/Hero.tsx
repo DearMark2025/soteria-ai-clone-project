@@ -1,3 +1,4 @@
+
 import { ArrowRight, Code } from 'lucide-react';
 
 const Hero = () => {
@@ -45,10 +46,16 @@ const Hero = () => {
           <div className="w-full h-full bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '2.5s' }}></div>
         </div>
         
-        {/* Floating particles */}
-        <div className="absolute top-80 left-40 w-2 h-2 bg-green-400 rounded-full opacity-30 animate-bounce" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-80 right-60 w-2 h-2 bg-green-500 rounded-full opacity-40 animate-bounce" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-96 right-1/4 w-2 h-2 bg-green-300 rounded-full opacity-35 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+        {/* Floating particles - now all animated */}
+        <div className="absolute top-80 left-40 w-2 h-2 bg-green-400 rounded-full opacity-30">
+          <div className="w-full h-full bg-green-400 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+        </div>
+        <div className="absolute bottom-80 right-60 w-2 h-2 bg-green-500 rounded-full opacity-40">
+          <div className="w-full h-full bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '2s' }}></div>
+        </div>
+        <div className="absolute top-96 right-1/4 w-2 h-2 bg-green-300 rounded-full opacity-35">
+          <div className="w-full h-full bg-green-300 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+        </div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
