@@ -1,33 +1,55 @@
 
-import { ArrowRight, Bot, Code, Smartphone } from 'lucide-react';
+import { ArrowRight, Code } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section id="home" className="relative bg-gray-900 py-20 overflow-hidden min-h-screen flex items-center">
-      {/* Animated Network Background */}
+      {/* Animated Node Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="network" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              <circle cx="20" cy="20" r="2" fill="#10b981" opacity="0.6">
-                <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite" />
-              </circle>
-              <circle cx="80" cy="30" r="1.5" fill="#10b981" opacity="0.4">
-                <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" repeatCount="indefinite" />
-              </circle>
-              <circle cx="50" cy="70" r="1" fill="#10b981" opacity="0.3">
-                <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite" />
-              </circle>
-              <line x1="20" y1="20" x2="80" y2="30" stroke="#10b981" strokeWidth="0.5" opacity="0.2">
-                <animate attributeName="opacity" values="0.2;0.5;0.2" dur="6s" repeatCount="indefinite" />
-              </line>
-              <line x1="80" y1="30" x2="50" y2="70" stroke="#10b981" strokeWidth="0.5" opacity="0.2">
-                <animate attributeName="opacity" values="0.2;0.4;0.2" dur="7s" repeatCount="indefinite" />
-              </line>
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#network)" />
-        </svg>
+        {/* Node 1 */}
+        <div className="absolute top-20 left-20 w-3 h-3 bg-green-500 rounded-full opacity-60">
+          <div className="w-full h-full bg-green-500 rounded-full animate-ping"></div>
+        </div>
+        
+        {/* Node 2 */}
+        <div className="absolute top-40 right-32 w-2 h-2 bg-green-400 rounded-full opacity-50">
+          <div className="w-full h-full bg-green-400 rounded-full animate-pulse"></div>
+        </div>
+        
+        {/* Node 3 */}
+        <div className="absolute bottom-40 left-32 w-4 h-4 bg-green-600 rounded-full opacity-40">
+          <div className="w-full h-full bg-green-600 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+        </div>
+        
+        {/* Node 4 */}
+        <div className="absolute top-60 left-1/2 w-2.5 h-2.5 bg-green-300 rounded-full opacity-70">
+          <div className="w-full h-full bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        </div>
+        
+        {/* Node 5 */}
+        <div className="absolute bottom-60 right-20 w-3.5 h-3.5 bg-green-500 rounded-full opacity-50">
+          <div className="w-full h-full bg-green-500 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+        </div>
+        
+        {/* Node 6 */}
+        <div className="absolute top-32 left-2/3 w-2 h-2 bg-green-400 rounded-full opacity-60">
+          <div className="w-full h-full bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        </div>
+        
+        {/* Node 7 */}
+        <div className="absolute bottom-20 left-1/4 w-3 h-3 bg-green-600 rounded-full opacity-45">
+          <div className="w-full h-full bg-green-600 rounded-full animate-ping" style={{ animationDelay: '3s' }}></div>
+        </div>
+        
+        {/* Node 8 */}
+        <div className="absolute top-1/2 right-40 w-2.5 h-2.5 bg-green-300 rounded-full opacity-55">
+          <div className="w-full h-full bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '2.5s' }}></div>
+        </div>
+        
+        {/* Floating particles */}
+        <div className="absolute top-80 left-40 w-1 h-1 bg-green-400 rounded-full opacity-30 animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-80 right-60 w-1 h-1 bg-green-500 rounded-full opacity-40 animate-bounce" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-96 right-1/4 w-1 h-1 bg-green-300 rounded-full opacity-35 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
