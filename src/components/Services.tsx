@@ -1,83 +1,167 @@
 
-import { Brain, Globe, Monitor, Smartphone, Shield, Zap } from 'lucide-react';
+import { Brain, Globe, Monitor, Smartphone, Shield, Zap, Clock, Target, TrendingUp } from 'lucide-react';
 
 const Services = () => {
-  const services = [
+  const processSteps = [
+    {
+      number: "1",
+      title: "Consultation & Planning",
+      description: "Define your technology needs and choose from AI, web, or mobile solutions that fit your business goals.",
+      duration: "2 days",
+      icon: Target
+    },
+    {
+      number: "2", 
+      title: "Design & Architecture",
+      description: "Create detailed system architecture and user experience designs with cutting-edge technology stack.",
+      duration: "1 week",
+      icon: Brain
+    },
+    {
+      number: "3",
+      title: "Development & Testing",
+      description: "Build your solution with rigorous testing, automated deployment, and progress tracking.",
+      duration: "2-8 weeks",
+      icon: Code
+    },
+    {
+      number: "4",
+      title: "Launch & Integration",
+      description: "Get your solution live with seamless integration, comprehensive training, and full documentation.",
+      duration: "Instant",
+      icon: Zap
+    },
+    {
+      number: "5",
+      title: "Support & Scaling",
+      description: "Ongoing maintenance, feature updates, and scaling support to grow with your business needs.",
+      duration: "Ongoing",
+      icon: TrendingUp
+    }
+  ];
+
+  const whyChooseUs = [
     {
       icon: Brain,
-      title: "AI Applications",
-      description: "Cutting-edge artificial intelligence solutions tailored to your business needs, including machine learning models and intelligent automation systems.",
-      features: ["Machine Learning", "Natural Language Processing", "Computer Vision", "Predictive Analytics"]
+      title: "AI-Powered Solutions",
+      description: "Leverage cutting-edge artificial intelligence to automate processes and gain competitive advantages in your industry."
     },
     {
-      icon: Globe,
-      title: "Web Development",
-      description: "Modern, responsive websites and web applications built with the latest technologies and best practices for optimal performance.",
-      features: ["Responsive Design", "E-commerce Solutions", "CMS Development", "Progressive Web Apps"]
+      icon: Target,
+      title: "3x Development Speed",
+      description: "Our proven methodologies and experienced team deliver solutions 3x faster than traditional development approaches."
     },
     {
-      icon: Monitor,
-      title: "Software Development",
-      description: "Custom software solutions designed to streamline your business processes and enhance productivity across all platforms.",
-      features: ["Desktop Applications", "Cloud Solutions", "API Development", "System Integration"]
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications for Android and iOS, delivering exceptional user experiences.",
-      features: ["Native iOS/Android", "Cross-platform", "UI/UX Design", "App Store Optimization"]
+      icon: Shield,
+      title: "Enterprise Security",
+      description: "Bank-grade security protocols and compliance standards protecting your data and ensuring reliable operations."
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Services</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive technology solutions to transform your business and drive innovation
-          </p>
-        </div>
+    <div className="bg-gray-900 text-white">
+      {/* How Soteria AI Works Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              How Soteria AI Works
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              A simple 5-step journey to transform your business with cutting-edge technology solutions
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg">
-                  <service.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 ml-4">{service.title}</h3>
-              </div>
-              
-              <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-              
-              <div className="grid grid-cols-2 gap-3">
-                {service.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-center">
-                    <Shield className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-gray-700">{feature}</span>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            {processSteps.map((step, index) => (
+              <div key={index} className="bg-gray-800 rounded-2xl p-6 hover:bg-gray-750 transition-all duration-300">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="bg-green-500 p-3 rounded-xl">
+                    <step.icon className="w-6 h-6 text-white" />
                   </div>
-                ))}
+                  <div className="bg-green-100 text-green-800 text-sm font-semibold px-2 py-1 rounded-full">
+                    {step.number}
+                  </div>
+                </div>
+                <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
+                <p className="text-gray-400 text-sm mb-4 leading-relaxed">{step.description}</p>
+                <div className="bg-green-500/10 text-green-400 text-xs font-medium px-3 py-1 rounded-full inline-block">
+                  {step.duration}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
-            <Zap className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Business?</h3>
-            <p className="text-blue-100 mb-6">Let's discuss how our AI-powered solutions can help you achieve your goals</p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Get Free Consultation
+          <div className="text-center mt-12">
+            <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">
+              Start Your Journey Today →
             </button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Why Choose Soteria AI Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Why Choose Soteria AI?
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Revolutionary technology solutions that put your business growth first
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {whyChooseUs.map((feature, index) => (
+              <div key={index} className="bg-gray-800 rounded-2xl p-8 hover:bg-gray-750 transition-all duration-300">
+                <div className="bg-green-500 p-4 rounded-xl w-fit mb-6">
+                  <feature.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Additional Features */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="bg-gray-800 rounded-2xl p-8 hover:bg-gray-750 transition-all duration-300">
+              <div className="bg-green-500 p-4 rounded-xl w-fit mb-6">
+                <Globe className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">Global Standards</h3>
+              <p className="text-gray-400 leading-relaxed">
+                International best practices with local expertise, serving businesses across Nigeria and beyond.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-2xl p-8 hover:bg-gray-750 transition-all duration-300">
+              <div className="bg-green-500 p-4 rounded-xl w-fit mb-6">
+                <Smartphone className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">Mobile-First Design</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Seamless experience across all devices with offline capabilities for uninterrupted access.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-2xl p-8 hover:bg-gray-750 transition-all duration-300">
+              <div className="bg-green-500 p-4 rounded-xl w-fit mb-6">
+                <Clock className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">24/7 Support</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Round-the-clock technical support and maintenance to keep your systems running smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 };
 
 export default Services;
+
+import { Code } from 'lucide-react';

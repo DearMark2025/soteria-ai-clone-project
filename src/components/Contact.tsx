@@ -11,7 +11,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted:', formData);
   };
 
@@ -23,59 +22,59 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+    <section id="contact" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Get In <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Touch</span>
+          <h2 className="text-4xl md:text-5xl font-bol d text-white mb-4">
+            Get In <span className="text-green-400">Touch</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to start your next project? Let's discuss how we can help transform your ideas into reality
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-white mb-8">Contact Information</h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="bg-blue-100 p-3 rounded-lg">
-                  <MapPin className="w-6 h-6 text-blue-600" />
+                <div className="bg-green-500 p-3 rounded-lg">
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Office Address</h4>
-                  <p className="text-gray-600">Dominion Aviation College</p>
-                  <p className="text-gray-600">37 Oyinlola Street, Off Bolumole</p>
-                  <p className="text-gray-600">Ring Road, Ibadan, Oyo State, Nigeria</p>
+                  <h4 className="font-semibold text-white">Office Address</h4>
+                  <p className="text-gray-400">Dominion Aviation College</p>
+                  <p className="text-gray-400">37 Oyinlola Street, Off Bolumole</p>
+                  <p className="text-gray-400">Ring Road, Ibadan, Oyo State, Nigeria</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="bg-purple-100 p-3 rounded-lg">
-                  <Mail className="w-6 h-6 text-purple-600" />
+                <div className="bg-green-500 p-3 rounded-lg">
+                  <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">info@soteriaai.com</p>
-                  <p className="text-gray-600">contact@soteriaai.com</p>
+                  <h4 className="font-semibold text-white">Email</h4>
+                  <p className="text-gray-400">support@soteriaai.ng</p>
+                  <p className="text-gray-400">contact@soteriaai.ng</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="bg-green-100 p-3 rounded-lg">
-                  <Phone className="w-6 h-6 text-green-600" />
+                <div className="bg-green-500 p-3 rounded-lg">
+                  <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-600">+234 (0) 123 456 7890</p>
-                  <p className="text-gray-600">+234 (0) 987 654 3210</p>
+                  <h4 className="font-semibold text-white">Phone</h4>
+                  <p className="text-gray-400">+234 800 SHELTER</p>
+                  <p className="text-gray-400">+234 (0) 987 654 3210</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-12 p-6 bg-white rounded-xl shadow-lg">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">Business Hours</h4>
-              <div className="space-y-2 text-gray-600">
+            <div className="mt-12 p-6 bg-gray-800 rounded-xl">
+              <h4 className="text-lg font-semibold text-white mb-4">Business Hours</h4>
+              <div className="space-y-2 text-gray-400">
                 <div className="flex justify-between">
                   <span>Monday - Friday</span>
                   <span>9:00 AM - 6:00 PM</span>
@@ -92,11 +91,11 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+          <div className="bg-gray-800 p-8 rounded-xl">
+            <h3 className="text-2xl font-bold text-white mb-6">Send Us a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   Full Name
                 </label>
                 <input
@@ -106,13 +105,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-gray-700 text-white"
                   placeholder="Your full name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                   Email Address
                 </label>
                 <input
@@ -122,13 +121,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-gray-700 text-white"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Message
                 </label>
                 <textarea
@@ -138,14 +137,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-gray-700 text-white"
                   placeholder="Tell us about your project..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
               >
                 Send Message
                 <Send size={20} />
