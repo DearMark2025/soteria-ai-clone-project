@@ -7,10 +7,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-green-500 p-2 rounded-lg">
-                <div className="w-6 h-6 bg-white rounded-sm flex items-center justify-center">
-                  <span className="text-green-500 font-bold text-sm">S</span>
-                </div>
+              <div className="w-10 h-10 rounded-lg overflow-hidden bg-white p-1">
+                <img 
+                  src="/lovable-uploads/b36e128d-738d-419d-b9bc-7738c221ebff.png" 
+                  alt="Soteria AI Technologies Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold text-white">
                 Soteria AI Technologies
