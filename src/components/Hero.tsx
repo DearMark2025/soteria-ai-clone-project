@@ -34,7 +34,7 @@ const Hero = () => {
         {/* Central Icon */}
         <div className="mb-8 flex justify-center">
           <div className="bg-green-500 p-6 rounded-2xl shadow-2xl">
-            <Bot className="w-12 h-12 text-white" />
+            <Code className="w-12 h-12 text-white" />
           </div>
         </div>
 
@@ -45,32 +45,32 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Transform your business with{' '}
-          <span className="text-green-400 font-semibold">cutting-edge AI solutions</span>.{' '}
-          Build consistently and unlock{' '}
-          <span className="text-green-400 font-semibold">3x your productivity</span>.
+          Professional{' '}
+          <span className="text-green-400 font-semibold">app, website & software development</span> company.{' '}
+          Specializing in{' '}
+          <span className="text-green-400 font-semibold">AI applications</span> and cutting-edge technology solutions.
         </p>
 
         {/* Statistics */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">100+</div>
-            <p className="text-gray-400">Projects Delivered</p>
+            <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">150+</div>
+            <p className="text-gray-400">Apps & Websites Built</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">50+</div>
+            <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">80+</div>
             <p className="text-gray-400">Happy Clients</p>
           </div>
           <div className="text-center">
             <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">98%</div>
-            <p className="text-gray-400">Success Rate</p>
+            <p className="text-gray-400">Project Success Rate</p>
           </div>
         </div>
 
         {/* CTA Button */}
         <div className="mb-16">
           <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 mx-auto shadow-lg hover:shadow-xl">
-            Start Your Journey
+            Start Your Project
             <ArrowRight size={20} />
           </button>
         </div>
@@ -79,15 +79,15 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center gap-6 text-sm">
           <div className="flex items-center gap-2 text-gray-300">
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-            <span>Enterprise-grade security</span>
+            <span>Custom software development</span>
           </div>
           <div className="flex items-center gap-2 text-gray-300">
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-            <span>No hidden fees</span>
+            <span>AI-powered applications</span>
           </div>
           <div className="flex items-center gap-2 text-gray-300">
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-            <span>Made for global businesses</span>
+            <span>Mobile & web solutions</span>
           </div>
         </div>
       </div>

@@ -1,40 +1,40 @@
 
-import { Brain, Globe, Monitor, Smartphone, Shield, Zap, Clock, Target, TrendingUp } from 'lucide-react';
+import { Brain, Globe, Monitor, Smartphone, Shield, Zap, Clock, Target, TrendingUp, Code } from 'lucide-react';
 
 const Services = () => {
   const processSteps = [
     {
       number: "1",
-      title: "Consultation & Planning",
-      description: "Define your technology needs and choose from AI, web, or mobile solutions that fit your business goals.",
-      duration: "2 days",
+      title: "Discovery & Planning",
+      description: "We analyze your requirements and create a detailed project roadmap for your app, website, or software solution.",
+      duration: "2-3 days",
       icon: Target
     },
     {
       number: "2", 
       title: "Design & Architecture",
-      description: "Create detailed system architecture and user experience designs with cutting-edge technology stack.",
-      duration: "1 week",
-      icon: Brain
+      description: "Create stunning UI/UX designs and robust system architecture using the latest development frameworks.",
+      duration: "1-2 weeks",
+      icon: Monitor
     },
     {
       number: "3",
       title: "Development & Testing",
-      description: "Build your solution with rigorous testing, automated deployment, and progress tracking.",
-      duration: "2-8 weeks",
+      description: "Build your custom application with rigorous testing, clean code practices, and regular progress updates.",
+      duration: "3-12 weeks",
       icon: Code
     },
     {
       number: "4",
-      title: "Launch & Integration",
-      description: "Get your solution live with seamless integration, comprehensive training, and full documentation.",
-      duration: "Instant",
+      title: "Deployment & Launch",
+      description: "Launch your application with seamless deployment, comprehensive documentation, and user training.",
+      duration: "1-2 days",
       icon: Zap
     },
     {
       number: "5",
-      title: "Support & Scaling",
-      description: "Ongoing maintenance, feature updates, and scaling support to grow with your business needs.",
+      title: "Maintenance & Support",
+      description: "Ongoing technical support, feature updates, and performance optimization to keep your app running smoothly.",
       duration: "Ongoing",
       icon: TrendingUp
     }
@@ -42,19 +42,19 @@ const Services = () => {
 
   const whyChooseUs = [
     {
+      icon: Code,
+      title: "Custom Software Development",
+      description: "We build tailor-made applications, websites, and software solutions that perfectly match your business requirements."
+    },
+    {
       icon: Brain,
-      title: "AI-Powered Solutions",
-      description: "Leverage cutting-edge artificial intelligence to automate processes and gain competitive advantages in your industry."
+      title: "AI Application Specialists",
+      description: "Leverage artificial intelligence to create smart applications that automate processes and provide intelligent insights."
     },
     {
-      icon: Target,
-      title: "3x Development Speed",
-      description: "Our proven methodologies and experienced team deliver solutions 3x faster than traditional development approaches."
-    },
-    {
-      icon: Shield,
-      title: "Enterprise Security",
-      description: "Bank-grade security protocols and compliance standards protecting your data and ensuring reliable operations."
+      icon: Smartphone,
+      title: "Mobile-First Approach",
+      description: "All our applications are designed to work seamlessly across desktop, tablet, and mobile devices."
     }
   ];
 
@@ -65,10 +65,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              How Soteria AI Works
+              Our Development Process
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              A simple 5-step journey to transform your business with cutting-edge technology solutions
+              A proven 5-step approach to deliver exceptional apps, websites, and software solutions
             </p>
           </div>
 
@@ -94,21 +94,21 @@ const Services = () => {
 
           <div className="text-center mt-12">
             <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">
-              Start Your Journey Today →
+              Start Your Project Today →
             </button>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Soteria AI Section */}
+      {/* Our Services Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Why Choose Soteria AI?
+              Our Development Services
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Revolutionary technology solutions that put your business growth first
+              Comprehensive technology solutions for modern businesses
             </p>
           </div>
 
@@ -124,25 +124,25 @@ const Services = () => {
             ))}
           </div>
 
-          {/* Additional Features */}
+          {/* Additional Services */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-gray-800 rounded-2xl p-8 hover:bg-gray-750 transition-all duration-300">
               <div className="bg-green-500 p-4 rounded-xl w-fit mb-6">
                 <Globe className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Global Standards</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Web Applications</h3>
               <p className="text-gray-400 leading-relaxed">
-                International best practices with local expertise, serving businesses across Nigeria and beyond.
+                Modern, responsive web applications built with the latest technologies and best practices.
               </p>
             </div>
 
             <div className="bg-gray-800 rounded-2xl p-8 hover:bg-gray-750 transition-all duration-300">
               <div className="bg-green-500 p-4 rounded-xl w-fit mb-6">
-                <Smartphone className="w-8 h-8 text-white" />
+                <Shield className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Mobile-First Design</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Enterprise Solutions</h3>
               <p className="text-gray-400 leading-relaxed">
-                Seamless experience across all devices with offline capabilities for uninterrupted access.
+                Scalable enterprise software solutions with advanced security and integration capabilities.
               </p>
             </div>
 
@@ -150,9 +150,9 @@ const Services = () => {
               <div className="bg-green-500 p-4 rounded-xl w-fit mb-6">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">24/7 Support</h3>
+              <h3 className="text-xl font-bold text-white mb-4">24/7 Technical Support</h3>
               <p className="text-gray-400 leading-relaxed">
-                Round-the-clock technical support and maintenance to keep your systems running smoothly.
+                Comprehensive technical support and maintenance services to keep your applications running smoothly.
               </p>
             </div>
           </div>
@@ -163,5 +163,3 @@ const Services = () => {
 };
 
 export default Services;
-
-import { Code } from 'lucide-react';

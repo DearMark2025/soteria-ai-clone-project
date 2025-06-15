@@ -14,12 +14,12 @@ const Footer = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-white">
-                Soteria AI
+                Soteria AI Technologies
               </h3>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Transforming businesses with cutting-edge AI solutions. Your trusted partner in securing 
-              innovative technology solutions across Nigeria and beyond.
+              Professional app, website, and software development company specializing in AI applications. 
+              We build custom technology solutions that drive business growth and innovation.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-green-500 transition-colors">
@@ -36,27 +36,27 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-500 text-sm mt-4">
-              Registered LLC • Impact-driven organization
+              Registered Software Development Company • CAC: RC 8363264
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-green-400">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-green-400">Services</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">How It Works</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Success Stories</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Mobile App Development</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Web Development</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">AI Applications</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Software Solutions</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-green-400">Legal</h4>
+            <h4 className="text-lg font-semibold mb-4 text-green-400">Company</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Use</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Compliance</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Our Portfolio</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
             </ul>
           </div>
         </div>
@@ -67,30 +67,35 @@ const Footer = () => {
             <div className="space-y-3 text-gray-400">
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>support@soteriaai.ng</span>
+                <span>projects@soteriaai.ng</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+234 800 SHELTER</span>
+                <span>+234 800 SOTERIA</span>
               </div>
               <div className="text-sm">
-                <p>Lagos, Nigeria</p>
+                <p>Ibadan, Oyo State, Nigeria</p>
               </div>
             </div>
           </div>
           
           <div className="md:col-span-2">
-            <h4 className="text-lg font-semibold mb-4 text-green-400">Company Information</h4>
+            <h4 className="text-lg font-semibold mb-4 text-green-400">Legal Information</h4>
             <div className="text-gray-400 text-sm">
-              <p className="mb-2">Soteria AI Technologies Limited is registered in Nigeria with CAC Registration Number: RC 8363264</p>
+              <p className="mb-2">Soteria AI Technologies Limited - Professional Software Development Company</p>
               <p>Office: Dominion Aviation College, 37 Oyinlola Street, Off Bolumole, Ring Road, Ibadan, Oyo State, Nigeria</p>
+              <div className="mt-4 space-x-4">
+                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8">
           <div className="text-center text-gray-400 text-sm">
-            <p>&copy; 2024 Soteria AI Technologies Limited. All rights reserved.</p>
+            <p>&copy; 2024 Soteria AI Technologies Limited. All rights reserved. | Professional App & Software Development</p>
           </div>
         </div>
       </div>

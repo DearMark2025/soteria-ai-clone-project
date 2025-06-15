@@ -1,33 +1,34 @@
+
 import { Award, Users, Target, Globe, TrendingUp, BarChart3, Shield } from 'lucide-react';
 
 const About = () => {
   const impactStats = [
     {
       icon: TrendingUp,
-      title: "Total Projects Delivered",
-      value: "₦500M+",
-      change: "+12% from last month",
+      title: "Total Project Value",
+      value: "₦2.5B+",
+      change: "+25% from last year",
       color: "text-green-400"
     },
     {
       icon: Users,
       title: "Active Clients",
-      value: "45,234",
-      change: "+8% from last month", 
+      value: "120+",
+      change: "+30% from last year", 
       color: "text-blue-400"
     },
     {
       icon: BarChart3,
-      title: "Success Rate",
+      title: "Project Success Rate",
       value: "98.5%",
-      change: "+2% from last month",
+      change: "+2% from last year",
       color: "text-purple-400"
     },
     {
       icon: Globe,
-      title: "Global Reach",
-      value: "8,742",
-      change: "+15% from last month",
+      title: "Apps & Websites Built",
+      value: "250+",
+      change: "+40% from last year",
       color: "text-indigo-400"
     }
   ];
@@ -35,51 +36,51 @@ const About = () => {
   const testimonials = [
     {
       name: "Adebayo Olumide",
-      role: "Software Engineer",
+      role: "CEO, TechStart Nigeria",
       location: "Lagos",
       avatar: "AO",
       rating: 5,
-      quote: "Soteria AI completely changed my business. I went from struggling with manual processes to owning automated systems. The AI solutions are absolutely game-changing!"
+      quote: "Soteria AI Technologies built our entire e-commerce platform from scratch. The mobile app and web application exceeded our expectations. Sales increased by 300% in 6 months!"
     },
     {
       name: "Chioma Nwachukwu", 
-      role: "Business Owner",
+      role: "Founder, MedTech Solutions",
       location: "Abuja",
       avatar: "CN",
       rating: 5,
-      quote: "As an entrepreneur, this platform has revolutionized how I manage operations. The security and transparency give me complete peace of mind."
+      quote: "They developed a comprehensive hospital management system for us. The AI-powered patient tracking and automated scheduling features have revolutionized our operations."
     },
     {
       name: "Emeka Okafor",
-      role: "Medical Doctor", 
+      role: "CTO, FinServe Limited", 
       location: "Port Harcourt",
       avatar: "EO",
       rating: 5,
-      quote: "The mobile-first design makes everything so easy. I can manage my practice and track progress anywhere, anytime."
+      quote: "The custom banking software they built handles over 10,000 transactions daily. The security features and mobile integration are world-class. Highly recommend!"
     },
     {
       name: "Fatima Ibrahim",
-      role: "Civil Engineer",
+      role: "Director, EduTech Institute",
       location: "Kaduna", 
       avatar: "FI",
       rating: 5,
-      quote: "I saved ₦3.2 million over 9 months and streamlined all my project management processes completely."
+      quote: "Our online learning platform serves 5,000+ students. The AI-powered recommendation system and mobile app have transformed how we deliver education."
     },
     {
       name: "Olumide Adegoke",
-      role: "Entrepreneur",
+      role: "MD, Logistics Pro",
       location: "Ibadan",
       avatar: "OA", 
       rating: 5,
-      quote: "After 6 months of consistent use, I've automated 80% of my business operations and increased efficiency dramatically."
+      quote: "The fleet management software with real-time tracking has optimized our delivery operations. We've reduced costs by 40% and improved customer satisfaction significantly."
     },
     {
       name: "Kemi Adebayo",
-      role: "Teacher",
+      role: "Owner, Fashion Hub",
       location: "Abeokuta",
       avatar: "KA",
       rating: 5,
-      quote: "The discipline of working with Soteria AI has transformed how I manage my educational technology needs."
+      quote: "They built our e-commerce website and mobile app. The inventory management system and customer analytics have helped us scale from local to nationwide operations."
     }
   ];
 
@@ -90,10 +91,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Live Impact Dashboard
+              Our Development Impact
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Real-time data showing the positive impact Soteria AI is making across Nigeria
+              Real-time metrics showcasing the success of our software development projects across Nigeria
             </p>
           </div>
 
@@ -117,45 +118,45 @@ const About = () => {
           {/* Recent Success Stories */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-gray-800 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Recent Success Stories</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Recent Project Highlights</h3>
               <div className="space-y-6">
                 <div className="border-l-4 border-green-500 pl-4">
                   <p className="text-gray-300 italic mb-2">
-                    "Thanks to Soteria AI, I was able to automate my entire customer service system. The AI chatbot handles 90% of inquiries automatically!"
+                    "Built a comprehensive ERP system that handles inventory, sales, and customer management. The mobile app allows remote access from anywhere."
                   </p>
-                  <p className="text-green-400 text-sm">- Adebayo O., Lagos</p>
+                  <p className="text-green-400 text-sm">- Manufacturing Company, Lagos</p>
                 </div>
                 <div className="border-l-4 border-green-500 pl-4">
                   <p className="text-gray-300 italic mb-2">
-                    "As a business owner, Soteria AI has streamlined my operations completely. Revenue increased by 150% in just 6 months."
+                    "Developed an AI-powered recruitment platform that matches candidates with jobs automatically. Reduced hiring time by 70%."
                   </p>
-                  <p className="text-green-400 text-sm">- Mrs. Chioma N., Abuja</p>
+                  <p className="text-green-400 text-sm">- HR Solutions, Abuja</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-gray-800 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Geographic Impact</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Technology Expertise</h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Lagos</span>
+                  <span className="text-gray-300">Mobile Apps (iOS/Android)</span>
                   <div className="flex items-center gap-2">
                     <div className="bg-green-500 h-2 rounded-full" style={{width: '120px'}}></div>
-                    <span className="text-green-400 font-semibold">32,456 users</span>
+                    <span className="text-green-400 font-semibold">Expert</span>
                   </div>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Abuja</span>
+                  <span className="text-gray-300">Web Applications</span>
                   <div className="flex items-center gap-2">
-                    <div className="bg-green-500 h-2 rounded-full" style={{width: '80px'}}></div>
-                    <span className="text-green-400 font-semibold">18,234 users</span>
+                    <div className="bg-green-500 h-2 rounded-full" style={{width: '110px'}}></div>
+                    <span className="text-green-400 font-semibold">Expert</span>
                   </div>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Port Harcourt</span>
+                  <span className="text-gray-300">AI/ML Applications</span>
                   <div className="flex items-center gap-2">
-                    <div className="bg-green-500 h-2 rounded-full" style={{width: '60px'}}></div>
-                    <span className="text-green-400 font-semibold">12,890 users</span>
+                    <div className="bg-green-500 h-2 rounded-full" style={{width: '100px'}}></div>
+                    <span className="text-green-400 font-semibold">Advanced</span>
                   </div>
                 </div>
               </div>
@@ -169,7 +170,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Real stories from Nigerians who have transformed their business with Soteria AI
+              What Our Clients Say About Our Development Work
             </h2>
           </div>
 
@@ -207,7 +208,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Trusted by Leading Organizations
+              Trusted Development Partner
             </h2>
           </div>
 
@@ -216,35 +217,35 @@ const About = () => {
               <div className="bg-gray-800 p-4 rounded-full mb-4">
                 <Shield className="w-8 h-8 text-green-400" />
               </div>
-              <h3 className="text-white font-semibold mb-2">Impact Certified</h3>
-              <p className="text-gray-400 text-sm">Verified impact on business transformation</p>
+              <h3 className="text-white font-semibold mb-2">Certified Developers</h3>
+              <p className="text-gray-400 text-sm">ISO certified development processes</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-gray-800 p-4 rounded-full mb-4">
                 <Globe className="w-8 h-8 text-green-400" />
               </div>
-              <h3 className="text-white font-semibold mb-2">ISO Compliant</h3>
-              <p className="text-gray-400 text-sm">International quality standards</p>
+              <h3 className="text-white font-semibold mb-2">Global Standards</h3>
+              <p className="text-gray-400 text-sm">International development practices</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-gray-800 p-4 rounded-full mb-4">
                 <Users className="w-8 h-8 text-green-400" />
               </div>
-              <h3 className="text-white font-semibold mb-2">Community Verified</h3>
-              <p className="text-gray-400 text-sm">Trusted by thousands of businesses</p>
+              <h3 className="text-white font-semibold mb-2">Expert Team</h3>
+              <p className="text-gray-400 text-sm">Skilled developers and designers</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-gray-800 p-4 rounded-full mb-4">
                 <Award className="w-8 h-8 text-green-400" />
               </div>
-              <h3 className="text-white font-semibold mb-2">Technology Excellence Award</h3>
-              <p className="text-gray-400 text-sm">Recognized for innovation leadership</p>
+              <h3 className="text-white font-semibold mb-2">Award Winning</h3>
+              <p className="text-gray-400 text-sm">Recognized for development excellence</p>
             </div>
           </div>
 
           <div className="text-center">
             <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">
-              Admin Panel Access
+              Start Your Development Project
             </button>
           </div>
         </div>
